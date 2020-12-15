@@ -4,9 +4,10 @@ kind: AnsibleJob
 metadata:
   name: ansible-posthook-rhacm-gitops-demo
   labels:
-      app.kubernetes.io/name: rhacm-gitops-demo
+    app.kubernetes.io/name: rhacm-gitops-demo
+  generateName: demo-job-
 spec:
-    tower_auth_secret: toweraccess
-    job_template_name: rhacm-gitops-demo
-    extra_vars:
-      demo_app_url: "http://hello-openshift-hello-openshift.apps.hub.acm.rht-labs.com"
+  extra_vars:
+    demo_app_url: "http://hello-openshift-hello-openshift.apps.hub.acm.rht-labs.com"
+  job_template_name: rhacm-gitops-demo
+  tower_auth_secret: toweraccess
