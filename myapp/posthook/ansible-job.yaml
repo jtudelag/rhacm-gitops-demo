@@ -9,5 +9,4 @@ spec:
     tower_auth_secret: toweraccess
     job_template_name: rhacm-gitops-demo
     extra_vars:
-      APP_NAME: pacman
-      PROJECT_NAME: pacman
+      demo_app_url: "http://hello-openshift-hello-openshift.apps.hub.acm.rht-labs.com"
