@@ -1,0 +1,9 @@
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Channel
+metadata:
+  name: ch-rhacm-gitops-demo
+  namespace: rhacm-gitops-demo
+spec:
+  type: GitHub
+  pathname: https://github.com/jtudelag/rhacm-gitops-demo.git

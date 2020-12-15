@@ -1,0 +1,5 @@
+resources:
+- ch-namespace.yaml
+- channel.yaml
+- app-namespace.yaml
+- app-subscription.yaml
