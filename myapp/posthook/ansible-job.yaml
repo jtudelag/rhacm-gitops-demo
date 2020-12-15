@@ -1,0 +1,13 @@
+---
+apiVersion: tower.ansible.com/v1alpha1
+kind: AnsibleJob
+metadata:
+  name: ansible-posthook-rhacm-gitops-demo
+  labels:
+      app.kubernetes.io/name: rhacm-gitops-demo
+spec:
+    tower_auth_secret: toweraccess
+    job_template_name: rhacm-gitops-demo
+    extra_vars:
+      APP_NAME: pacman
+      PROJECT_NAME: pacman
