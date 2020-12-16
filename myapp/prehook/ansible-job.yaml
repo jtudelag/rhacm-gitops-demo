@@ -1,0 +1,13 @@
+---
+apiVersion: tower.ansible.com/v1alpha1
+kind: AnsibleJob
+metadata:
+  name: ansible-prehook-rhacm-gitops-demo
+  labels:
+    app.kubernetes.io/name: rhacm-gitops-demo
+  generateName: demo-pre-
+spec:
+  extra_vars:
+    demo_app_url: "http://hello-openshift-hello-openshift.apps.hub.acm.rht-labs.com"
+  job_template_name: rhacm-gitops-demo
+  tower_auth_secret: toweraccess
