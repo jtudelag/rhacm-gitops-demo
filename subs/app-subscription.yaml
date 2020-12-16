@@ -4,6 +4,8 @@ kind: Subscription
 metadata:
   name: sub-rhacm-gitops-demo
   namespace: hello-openshift
+  labels:
+    app: hello-openshift
   annotations:
     apps.open-cluster-management.io/github-path: myapp
     apps.open-cluster-management.io/github-branch: master
