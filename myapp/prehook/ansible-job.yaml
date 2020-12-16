@@ -4,7 +4,7 @@ kind: AnsibleJob
 metadata:
   name: ansible-prehook-rhacm-gitops-demo
   labels:
-    app.kubernetes.io/name: rhacm-gitops-demo
+    app.kubernetes.io/name: hello-openshift
   generateName: demo-pre-
 spec:
   extra_vars:
