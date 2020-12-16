@@ -14,4 +14,6 @@ spec:
     name: toweraccess
   channel: rhacm-gitops-demo/ch-rhacm-gitops-demo
   placement:
-   local: true
+    placementRef:
+      kind: PlacementRule
+      name: pr-rhacm-gitops-demo

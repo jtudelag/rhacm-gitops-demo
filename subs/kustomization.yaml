@@ -3,5 +3,6 @@ resources:
 - channel.yaml
 - app-namespace.yaml
 - tower-secret.yaml
+- app-placementrule.yaml
 - app-subscription.yaml
 - application.yaml

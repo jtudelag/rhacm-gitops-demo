@@ -1,0 +1,12 @@
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  labels:
+    app: hello-openshift
+  name: pr-rhacm-gitops-demo
+  namespace: hello-openshift
+spec:
+  clusterSelector:
+    matchLabels:
+      local-cluster: "true"
